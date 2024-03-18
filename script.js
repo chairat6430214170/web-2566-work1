@@ -7,9 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let match_score = 0;
     let combo = 0;
     let lastest =[];
-    let skill_num = 0;
-    let count_for_skill = 0;
-
+  
     
     for (let i = 0; i < emojis.length; i++) {
      
@@ -65,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen');
 
                         error_score+=1;
-                        count_for_skill+=1;
+                       
                         document.getElementById('error').innerHTML = error_score;
 
                         combo=0;
@@ -73,13 +71,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
                     }
-                    if(count_for_skill>=3 || combo >=1){
-                        count_for_skill =0;
-                        
-                        skill_num+=1;
-                        document.getElementById('skill').innerHTML = skill_num;
+                  
             
-                    }
+                    
 
                 }
 
